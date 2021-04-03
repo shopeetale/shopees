@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300&display=swap");
+
+@font-ilisar: "Ilisarniq";
+@font-ilisar_light: "Ilisar_light";
+@font-sen: "Sen", sans-serif;
+@font-ibm: "IBM Plex Mono", monospace;
+
+@font-face {
+  font-family: @font-ilisar;
+  src: url("fonts/Ilisarniq-Regular.otf");
+}
+
+@font-face {
+  font-family: @font-ilisar_light;
+  src: url("fonts/Ilisarniq-Light.otf");
+}
+
+body {
+  font-family: @font-ilisar;
+}
+.sidenav {
+  background: #f7f9f9;
+  float: left;
+  width: 224px;
+  height: 100%;
+  border-right: 1px solid #6663771f;
+  position: fixed;
+
+  .headtxt {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 30px;
+    font-family: @font-ibm;
+    letter-spacing: 1px;
+    color: #6b6b6b;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      float: left;
+      width: 100%;
+      a {
+        text-decoration: none;
+        padding: 16px 20px;
+        display: block;
+        font-size: 13px;
+        color: #131313;
+        line-height: 16px;
+        font-family: @font-ilisar;
+        border-bottom: 1px solid #ccc;
+      }
+      a.active {
+        color: #ffffff;
+        background: #4d7ff7;
+
+        &::after {
+          content: "";
+          background: url("../images/dropdown.svg") no-repeat center;
+          width: 9px;
+          height: 4.5px;
+          display: inline-block;
+          position: absolute;
+          right: 20px;
+          bottom: 0;
+          top: 0;
+          margin: auto;
+          filter: invert(1);
+        }
+      }
+    }
+  }
+
+  .drop {
+    position: relative;
+
+    &::after {
+      content: "";
+      background: url("../images/dropdown.svg") no-repeat center;
+      width: 9px;
+      height: 4.5px;
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+  }
+}
+.drop-menu {
+  display: none;
+  li {
+    a {
+      padding-left: 30px !important;
+    }
+  }
+}
+
+.conetent-sec {
+  float: left;
+  width: calc(100%-224px);
+  padding: 20px;
+  background: #ffffff;
+  margin-left: 224px;
+}
+
+.shpx {
+  float: left;
+  width: 100%;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+
+  .shplogo {
+    float: left;
+    width: 100%;
+
+    img {
+      width: 20%;
+      height: 20px;
+      object-fit: contain;
+    }
+  }
+
+  .shpcont {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    font-family: @font-sen;
+    margin-top: 10px;
+  }
+
+  .btn-explore {
+    float: left;
+    width: 100%;
+    color: #ffffff !important;
+    background: #4d7ff7;
+    font-size: 12px;
+    font-family: @font-ilisar;
+  }
+}
+
+.inn-tltbx {
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  .tlt-logo {
+    float: left;
+    width: 40%;
+    text-align: center;
+
+    img {
+      width: 50%;
+    }
+  }
+}
+
+.shop-cont-sec {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+  .shp-dlt-sec {
+    float: left;
+    width: 100%;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+
+    .shplogo {
+      float: left;
+      width: 100%;
+      display: none;
+
+      img {
+        height: 20px;
+        object-fit: contain;
+      }
+    }
+
+    .shpcont {
+      float: left;
+      width: 100%;
+      font-size: 20px;
+      font-family: @font-sen;
+      margin-top: 0px;
+      margin-bottom: 0;
+    }
+
+    .discountbx {
+      float: left;
+      width: 70px;
+      height: 70px;
+      border: 1px dashed #ccc;
+      color: #131313;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: @font-ibm;
+      letter-spacing: 1.5px;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+    .pro-desc-bx {
+      float: left;
+      width: 70%;
+      background: #ffffff;
+      padding: 0 15px 0 15px;
+
+      .pro-type {
+        font-size: 12px;
+        color: #717171;
+        float: left;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+    }
+
+    .btn-go {
+      float: right;
+      background: #4d7ff7;
+      color: #ffffff;
+      font-size: 14px;
+      font-family: @font-sen;
+      font-weight: bold;
+      margin-top: 18px;
+    }
+  }
+}

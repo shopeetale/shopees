@@ -1,0 +1,30 @@
+[
+  {
+    "pagename": "Shopping",
+    "pageurl": "javascript:void(0)",
+    "subnav": [
+      {
+        "pagename": "Home",
+        "pageurl": "/",
+        "navicon": "assets/images/amazon.svg"
+      },
+      {
+        "pagename": "Amazon",
+        "pageurl": "/amazon",
+        "navicon": "assets/images/amazon.svg",
+        "submenu": [
+          {
+            "pagename": "derby",
+            "pageurl": "/derby",
+            "navicon": "assets/images/amazon.svg"
+          }
+        ]
+      },
+      {
+        "pagename": "Flipkart",
+        "pageurl": "/flipkart",
+        "navicon": "assets/images/amazon.svg"
+      }
+    ]
+  }
+]
