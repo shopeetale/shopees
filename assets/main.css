@@ -114,6 +114,7 @@ body {
   letter-spacing: 1px;
   color: #6b6b6b;
   margin-bottom: 30px;
+  text-decoration: none !important;
 }
 .sidenav ul {
   padding: 0;
@@ -192,7 +193,7 @@ body {
   width: 100%;
 }
 .shpx .shplogo img {
-  width: 20%;
+  width: 100%;
   height: 20px;
   object-fit: contain;
 }
@@ -274,7 +275,7 @@ body {
 }
 .shop-cont-sec .shp-dlt-sec .pro-desc-bx {
   float: left;
-  width: 70%;
+  width: 100%;
   background: #ffffff;
   padding: 0 15px 0 15px;
 }
@@ -286,6 +287,13 @@ body {
   margin-top: 5px;
   margin-bottom: 0;
 }
+.shop-cont-sec .shp-dlt-sec .pro-desc-bx .shpimg {
+  float: left;
+  width: 100%;
+}
+.shop-cont-sec .shp-dlt-sec .pro-desc-bx .shpimg img {
+  width: 100%;
+}
 .shop-cont-sec .shp-dlt-sec .btn-go {
   float: right;
   background: #4d7ff7;
@@ -294,4 +302,33 @@ body {
   font-family: "Sen", sans-serif;
   font-weight: bold;
   margin-top: 18px;
+}
+.namecheap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.namecheap .col-md-4 {
+  margin-bottom: 30px;
+}
+.namecheap .shpcont {
+  font-size: 18px !important;
+  line-height: 1.3;
+}
+.namecheap .shp-dlt-sec {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.namecheap .pro-desc-bx {
+  padding: 0 !important;
+}
+.trip .pro-desc-bx {
+  width: 80% !important;
+}
+.suppprt {
+  float: left;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }

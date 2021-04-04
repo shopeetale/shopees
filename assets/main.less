@@ -40,6 +40,7 @@ body {
     letter-spacing: 1px;
     color: #6b6b6b;
     margin-bottom: 30px;
+    text-decoration: none !important;
   }
 
   ul {
@@ -127,7 +128,7 @@ body {
     width: 100%;
 
     img {
-      width: 20%;
+      width: 100%;
       height: 20px;
       object-fit: contain;
     }
@@ -219,7 +220,7 @@ body {
     }
     .pro-desc-bx {
       float: left;
-      width: 70%;
+      width: 100%;
       background: #ffffff;
       padding: 0 15px 0 15px;
 
@@ -230,6 +231,14 @@ body {
         width: 100%;
         margin-top: 5px;
         margin-bottom: 0;
+      }
+
+      .shpimg {
+        float: left;
+        width: 100%;
+        img {
+          width: 100%;
+        }
       }
     }
 
@@ -243,4 +252,42 @@ body {
       margin-top: 18px;
     }
   }
+}
+
+.namecheap {
+  display: flex;
+  flex-wrap: wrap;
+
+  .col-md-4 {
+    margin-bottom: 30px;
+  }
+
+  .shpcont {
+    font-size: 18px !important;
+    line-height: 1.3;
+  }
+
+  .shp-dlt-sec {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .pro-desc-bx {
+    padding: 0 !important;
+  }
+}
+
+.trip {
+  .pro-desc-bx {
+    width: 80% !important;
+  }
+}
+
+.suppprt {
+  float: left;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
