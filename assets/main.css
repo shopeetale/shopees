@@ -379,3 +379,27 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
+.abtpage {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+}
+.abtpage h2 {
+  margin-bottom: 30px;
+  font-family: "Sen", sans-serif;
+}
+.abtpage p {
+  margin-bottom: 15px;
+  font-family: "Sen", sans-serif;
+  text-align: justify;
+}
+.abtpage .note {
+  font-weight: bold;
+}
+.abtpage .note span {
+  color: green;
+}
+.abtpage ul li {
+  line-height: 1.5;
+  font-family: "IBM Plex Mono", monospace;
+}
