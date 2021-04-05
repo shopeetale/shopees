@@ -332,3 +332,6 @@ body {
   position: absolute;
   bottom: 0;
 }
+.type-2 .pro-desc-bx {
+  width: 80% !important;
+}
