@@ -48,7 +48,7 @@ jQuery.getJSON("../jsons/namecheap.json", function (data) {
                                         <p class="shpcont">${data[i].content}</p>
                                         <p class="pro-type">${data[i].product}</p>
                                     </div>
-                                    <a href="${data[i].url}" class="btn btn-go" target="_blank>GET NOW</a>
+                                    <a href="${data[i].url}" class="btn btn-go" target="_blank">GET NOW</a>
                                 </div>
                             </div>`;
 
@@ -72,7 +72,7 @@ jQuery.getJSON("../jsons/trip.json", function (data) {
                                     <p class="shpcont">${data[i].content}</p>
                                     <p class="pro-type">${data[i].product}</p>
                                 </div>
-                                <a href="${data[i].url}" class="btn btn-go" target="_blank">GET NOW</a>
+                                <a href="${data[i].url}" class="btn btn-go" target="_blank">Book Now</a>
                             </div>`;
 
         prolistteamp = prolistteamp + prohtml;
@@ -91,7 +91,7 @@ jQuery.getJSON("../jsons/intacadamy.json", function (data) {
     for (var i = 0; i < data.length; i++) {
         var prohtml = `<div class="shp-dlt-sec">
                                 <div class="pro-desc-bx">
-                                    <div class="shplogo"><img src="${data[i].logo}" alt="amazon" /></div>
+                                    <div class="shplogo"><img src="${data[i].img}" alt="amazon" /></div>
                                     <p class="shpcont">${data[i].content}</p>
                                     <p class="pro-type">${data[i].product}</p>
                                 </div>
@@ -102,5 +102,52 @@ jQuery.getJSON("../jsons/intacadamy.json", function (data) {
 
     }
     $(".intacad").append(prolistteamp);
+
+});
+
+// explore- europe
+
+jQuery.getJSON("../jsons/explore_europ.json", function (data) {
+    console.log(data.length, "nameheco");
+    var prolistteamp = "";
+
+    for (var i = 0; i < data.length; i++) {
+        var prohtml = `<div class="col-md-4">
+                                <div class="shp-dlt-sec">
+                                    <div class="pro-desc-bx">
+                                        <div class="shpimg"><img src="${data[i].img}" alt="amazon" /></div>
+                                        <p class="shpcont">${data[i].content}</p>
+                                        <p class="pro-type">${data[i].product}</p>
+                                    </div>
+                                    <a href="${data[i].url}" class="btn btn-go" target="_blank">Book Now</a>
+                                </div>
+                            </div>`;
+
+        prolistteamp = prolistteamp + prohtml;
+
+    }
+    $(".explore-europe").append(prolistteamp);
+
+});
+
+
+jQuery.getJSON("../jsons/newchic.json", function (data) {
+    console.log(data.length, "nameheco");
+    var prolistteamp = "";
+
+    for (var i = 0; i < data.length; i++) {
+        var prohtml = `<div class="shp-dlt-sec">
+                                <div class="pro-desc-bx">
+                                    <p class="shpcont">${data[i].content}</p>
+                                    <p class="pro-type promo">${data[i].promo}</p>
+                                    <p class="pro-type">${data[i].product}</p>
+                                </div>
+                                <a href="${data[i].url}" class="btn btn-go" target="_blank">GET NOW</a>
+                            </div>`;
+
+        prolistteamp = prolistteamp + prohtml;
+
+    }
+    $(".newchic").append(prolistteamp);
 
 });

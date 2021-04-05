@@ -303,24 +303,29 @@ body {
   font-weight: bold;
   margin-top: 18px;
 }
-.namecheap {
+.namecheap,
+.explore-europe {
   display: flex;
   flex-wrap: wrap;
 }
-.namecheap .col-md-4 {
+.namecheap .col-md-4,
+.explore-europe .col-md-4 {
   margin-bottom: 30px;
 }
-.namecheap .shpcont {
+.namecheap .shpcont,
+.explore-europe .shpcont {
   font-size: 18px !important;
   line-height: 1.3;
 }
-.namecheap .shp-dlt-sec {
+.namecheap .shp-dlt-sec,
+.explore-europe .shp-dlt-sec {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.namecheap .pro-desc-bx {
+.namecheap .pro-desc-bx,
+.explore-europe .pro-desc-bx {
   padding: 0 !important;
 }
 .trip .pro-desc-bx {
@@ -334,4 +339,43 @@ body {
 }
 .type-2 .pro-desc-bx {
   width: 80% !important;
+}
+.banner-sec {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.banner-sec img {
+  width: 100%;
+}
+.abt-sec {
+  float: left;
+  width: 100%;
+}
+.abt-sec p {
+  display: block;
+  font-size: 20px;
+  font-family: "Sen", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.explore-europe {
+  margin-top: 0;
+}
+.explore-europe .shpimg {
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.explore-europe .btn-go {
+  margin-top: 0 !important;
+}
+.promo {
+  color: #e86501 !important;
+  font-weight: bold;
+  text-transform: uppercase;
 }
