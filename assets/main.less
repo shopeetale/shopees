@@ -95,10 +95,28 @@ body {
       display: inline-block;
       position: absolute;
       right: 20px;
-      bottom: 1px;
+      bottom: 0;
       top: 0;
       margin: auto;
     }
+  }
+
+  @media only screen and (max-width: 690px) {
+    left: -70%;
+    z-index: 1;
+    transition: 0.5s all ease;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .toogle-nav {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background: url("../images/menu.svg") no-repeat center;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    transform: scaleX(-1);
   }
 }
 .drop-menu {
@@ -112,10 +130,16 @@ body {
 
 .conetent-sec {
   float: left;
-  width: calc(100%-224px);
+  width: calc(100% - 224px);
   padding: 20px;
   background: #ffffff;
   margin-left: 224px;
+  @media only screen and (max-width: 690px) {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    margin-top: 60px;
+  }
 }
 
 .shpx {
