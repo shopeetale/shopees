@@ -116,6 +116,9 @@ body {
   margin-bottom: 30px;
   text-decoration: none !important;
 }
+.sidenav .headtxt img {
+  width: 100%;
+}
 .sidenav ul {
   padding: 0;
 }
@@ -402,4 +405,5 @@ body {
 .abtpage ul li {
   line-height: 1.5;
   font-family: "IBM Plex Mono", monospace;
+  margin-bottom: 15px;
 }
