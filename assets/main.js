@@ -151,3 +151,16 @@ jQuery.getJSON("../jsons/newchic.json", function (data) {
     $(".newchic").append(prolistteamp);
 
 });
+
+$(".toogle-nav").click(function () {
+    $(".sidenav").css("left", "0");
+}).blur(function () {
+    $(".sidenav").css("left", "-70%");
+});
+
+$(document).mouseup(function (e) {
+    var container = $(".sidenav");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.css("left", "-70%");
+    }
+})
