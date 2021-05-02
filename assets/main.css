@@ -235,6 +235,12 @@ body {
   font-family: "Sen", sans-serif;
   margin-top: 10px;
 }
+@media only screen and (max-width: 690px) {
+  .shpx .shpcont {
+    font-size: 12px;
+    height: 54px;
+  }
+}
 .shpx .btn-explore {
   float: left;
   width: 100%;
