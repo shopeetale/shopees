@@ -130,6 +130,28 @@ jQuery.getJSON("../jsons/explore_europ.json", function (data) {
 
 });
 
+jQuery.getJSON("../jsons/games.json", function (data) {
+    console.log(data.length, "nameheco");
+    var prolistteamp = "";
+
+    for (var i = 0; i < data.length; i++) {
+        var prohtml = `<div class="col-md-4">
+                                <div class="shp-dlt-sec">
+                                    <div class="pro-desc-bx">
+                                          <a href="${data[i].url}" class="" target="_blank">
+                                          <div class="shpimg"><img src="${data[i].img}" alt="amazon" /></div>
+                                          </a>
+                                    </div>
+                                </div>
+                            </div>`;
+
+        prolistteamp = prolistteamp + prohtml;
+
+    }
+    $(".games").append(prolistteamp);
+
+});
+
 
 jQuery.getJSON("../jsons/newchic.json", function (data) {
     console.log(data.length, "nameheco");
@@ -151,16 +173,47 @@ jQuery.getJSON("../jsons/newchic.json", function (data) {
     $(".newchic").append(prolistteamp);
 
 });
+jQuery.getJSON("../jsons/supscription.json", function (data) {
+    console.log(data.length, "nameheco");
+    var prolistteamp = "";
+
+    for (var i = 0; i < data.length; i++) {
+        var prohtml = `<div class="shp-dlt-sec">
+                                <div class="pro-desc-bx">
+                                    <p class="shpcont">${data[i].content}</p>
+                                    <p class="pro-type promo">${data[i].promo}</p>
+                                    <p class="pro-type">${data[i].product}</p>
+                                </div>
+                                <a href="${data[i].url}" class="btn btn-go" target="_blank">GET NOW</a>
+                            </div>`;
+
+        prolistteamp = prolistteamp + prohtml;
+
+    }
+    $(".subsription").append(prolistteamp);
+
+});
 
 $(".toogle-nav").click(function () {
     $(".sidenav").css("left", "0");
+    var html = '<span class="body-olay"></span>';
+    $(".body-olay").show();
+    $('body').append(html);
 }).blur(function () {
     $(".sidenav").css("left", "-70%");
 });
 
-$(document).mouseup(function (e) {
-    var container = $(".sidenav");
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-        container.css("left", "-70%");
-    }
-})
+
+if ($(window).width() <= 660) {
+    $(document).mouseup(function (e) {
+        var container = $(".sidenav");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            container.css("left", "-70%");
+            $(".body-olay").remove();
+        }
+    })
+}
+
+
+
+

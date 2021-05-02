@@ -172,14 +172,14 @@ body {
 @media only screen and (max-width: 690px) {
   .sidenav {
     left: -70%;
-    z-index: 1;
+    z-index: 9999;
     transition: 0.5s all ease;
   }
 }
 @media only screen and (max-width: 690px) {
   .toogle-nav {
     position: absolute;
-    top: 10px;
+    top: 18px;
     left: 15px;
     background: url("../images/menu.svg") no-repeat center;
     width: 24px;
@@ -200,6 +200,7 @@ body {
   padding: 20px;
   background: #ffffff;
   margin-left: 224px;
+  position: relative;
 }
 @media only screen and (max-width: 690px) {
   .conetent-sec {
@@ -256,6 +257,11 @@ body {
 }
 .inn-tltbx .tlt-logo img {
   width: 50%;
+}
+@media only screen and (max-width: 690px) {
+  .inn-tltbx .tlt-logo img {
+    width: 100%;
+  }
 }
 .shop-cont-sec {
   float: left;
@@ -433,4 +439,77 @@ body {
   line-height: 1.5;
   font-family: "IBM Plex Mono", monospace;
   margin-bottom: 15px;
+}
+.home-offer-section {
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+}
+.home-offer-section h1 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Ilisarniq";
+  margin-bottom: 15px;
+}
+.home-offer-section .picksbx {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.owl-nav {
+  position: absolute;
+  top: -26%;
+  right: 0;
+  margin: 0;
+}
+.owl-nav button {
+  outline: none !important;
+  background: none !important;
+  color: #131313 !important;
+}
+.abt-sec-gmaes {
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+.abt-sec-gmaes p {
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+}
+.games {
+  display: flex;
+  flex-wrap: wrap;
+}
+.games .shp-dlt-sec {
+  padding: 0;
+}
+.games .shp-dlt-sec .pro-desc-bx {
+  padding: 0;
+}
+.mob-logo {
+  display: none;
+}
+@media only screen and (max-width: 690px) {
+  .mob-logo {
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    display: block;
+  }
+  .mob-logo img {
+    width: 35%;
+  }
+}
+.body-olay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #00000078;
+  z-index: 17;
 }
