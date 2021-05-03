@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".sidenav").include("header.html");
+    $(".sidenav").load("header.html");
 
     setTimeout(function () {
         $(".drop").click(function () {
