@@ -1,5 +1,7 @@
 $(document).ready(function () {
+
     $(".sidenav").load("header.html");
+
 
     setTimeout(function () {
         $(".drop").click(function () {
