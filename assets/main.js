@@ -1,6 +1,10 @@
 $(document).ready(function () {
 
-    $(".sidenav").load("header.html");
+    $.ajax({
+        url: "header.html", success: function (result) {
+            $(".sidenav").append(result);
+        }
+    });
 
 
     setTimeout(function () {
